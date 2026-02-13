@@ -14,7 +14,7 @@ def charger_clients():
 def charger_vehicules():
     try:
         with open('vehicules.json', 'r') as f:
-            return [Vehicule.from_dict(v) for v in json.load(f)]
+            return [vehicule.from_dict(v) for v in json.load(f)]
     except Exception as e:
         print(f"ERREUR chargement vehicules: {e}")
         return []

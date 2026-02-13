@@ -1,7 +1,3 @@
-
-from multiprocessing.dummy.connection import Client
-
-
 class client:
     def __init__(self, id_client:str, nom, prenom, mail, telephone, adresse):
         self.id_client = id_client
@@ -23,7 +19,7 @@ class client:
         }
     @staticmethod
     def from_dict(data):
-        return Client(
+        return client(
             data["id_client"],
             data["nom"],
             data["prenom"],

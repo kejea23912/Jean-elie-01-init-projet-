@@ -19,7 +19,7 @@ class vehicule:
     
     @staticmethod
     def from_dict(data):
-        return Vehicule(
+        return vehicule(
             data["id_vehicule"],
             data["marque"],
             data["modele"],
