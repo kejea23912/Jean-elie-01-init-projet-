@@ -1,4 +1,7 @@
 
+from multiprocessing.dummy.connection import Client
+
+
 class client:
     def __init__(self, id:str, n, p, m, t, a):
         self.id_client = id
