@@ -9,3 +9,6 @@ Le travail met l’accent sur :
 - l’utilisation de classes pour représenter les entités du domaine ;
 - la sérialisation des données au format JSON ;
 - la mise en œuvre d’un menu interactif permettant d’exécuter les fonctionnalités principales.
+
+Problème : à la fin j’ai rencontré des problèmes de connexion, donc ça ne m’affichait pas mes clients ni mes véhicules. Mais finalement j’ai réussi à le régler. Par contre, j’ai une erreur d’affichage de quelques symboles car j’ai enlevé le UTF‑8 dans DataManager.py. Par manque de temps je n’ai pas pu corriger.
+
