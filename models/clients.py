@@ -3,13 +3,13 @@ from multiprocessing.dummy.connection import Client
 
 
 class client:
-    def __init__(self, id:str, n, p, m, t, a):
-        self.id_client = id
-        self.nom = n
-        self.prenom = p
-        self.mail = m 
-        self.telephone = t
-        self.adresse = a
+    def __init__(self, id_client:str, nom, prenom, mail, telephone, adresse):
+        self.id_client = id_client
+        self.nom = nom
+        self.prenom = prenom
+        self.mail = mail 
+        self.telephone = telephone
+        self.adresse = adresse
 
 
     def to_dict(self):

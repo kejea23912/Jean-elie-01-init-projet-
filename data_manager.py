@@ -1,5 +1,4 @@
 import json
-from multiprocessing.connection import Client
 from models.clients import client
 from models.vehicule import vehicule
 from models.reservation import Reservation
@@ -7,15 +6,17 @@ from models.reservation import Reservation
 def charger_clients():
     try:
         with open('clients.json', 'r') as f:
-            return [Client.from_dict(c) for c in json.load(f)]
-    except:
+            return [client.from_dict(c) for c in json.load(f)]
+    except Exception as e:
+        print(f"ERREUR chargement clients: {e}")
         return []
 
 def charger_vehicules():
     try:
         with open('vehicules.json', 'r') as f:
-            return [vehicule.from_dict(v) for v in json.load(f)]
-    except:
+            return [Vehicule.from_dict(v) for v in json.load(f)]
+    except Exception as e:
+        print(f"ERREUR chargement vehicules: {e}")
         return []
 
 def charger_reservations():
